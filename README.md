@@ -29,7 +29,7 @@ If Ant is not alredy present on the XL Deploy server, please download from [here
 
 ### Salesforce Migration Tool ###
 
-Download the [Salesforce Jar](./dist/ant-salesforce.jar) from this repository to a location of your choice.
+Download the [Salesforce Jar](./deps/ant-salesforce.jar) from this repository to a location of your choice.
 
 
 ### Plugin installation ###

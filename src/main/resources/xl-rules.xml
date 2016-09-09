@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+    Note: If you modify this file and automatic reloading is disabled in `planner.conf`, you must restart the XL Deploy server.
+-->
+<rules xmlns="http://www.xebialabs.com/xl-deploy/xl-rules">
+    <rule name="sfdc.DeployMetadataPackage" scope="deployed">
+        <conditions>
+            <type>sfdc.MetadataPackageModule</type>
+            <operation>CREATE</operation>
+            <operation>MODIFY</operation>
+        </conditions>
+        <steps>
+            <jython>
+                <description expression="true">'Deploy metadata package [%s] to [%s]' % (deployed.name, deployed.container.name)</description>
+                <script>sfdc/metadata_package/deploy.py</script>
+            </jython>
+        </steps>
+    </rule>
+
+    <rule name="sfdc.UndeployMetadataPackage" scope="deployed">
+        <conditions>
+            <type>sfdc.MetadataPackageModule</type>
+            <operation>DESTROY</operation>
+            <operation>MODIFY</operation>
+        </conditions>
+        <steps>
+            <jython>
+                <description expression="true">'Undeploy metadata package [%s] from [%s]' % (previousDeployed.name, previousDeployed.container.name)</description>
+                <script>sfdc/metadata_package/undeploy.py</script>
+            </jython>
+        </steps>
+    </rule>
+</rules>

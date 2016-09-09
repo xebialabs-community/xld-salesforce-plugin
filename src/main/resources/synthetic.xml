@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<synthetic xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd" xmlns="http://www.xebialabs.com/deployit/synthetic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <type type="sfdc.Organization" extends="udm.BaseContainer" root="INFRASTRUCTURE" description="Salesforce.com Organization">
+        <property name="url" default="https://login.salesforce.com"/>
+        <property name="username" description="The Salesforce username for login"/>
+        <property name="password" password="true"
+                  description="The Salesforce password for login. If you are using a security token, paste the 25-digit token value to the end of your password"/>
+
+        <property name="migrationToolJar" description="Absolute file reference to the ant-salesforce.jar" category="Migration Tool Settings"/>
+        <property name="antExecutable" description="Absolute file reference to the ant executable (ant, ant.bat, ant.cmd)" category="Migration Tool Settings" />
+        <property name="proxyHost" required="false" description="Host. If your network requires an HTTP proxy" category="Migration Tool Settings"/>
+        <property name="proxyPort" required="false" description="Port. If your network requires an HTTP proxy" category="Migration Tool Settings"/>
+    </type>
+
+    <type type="sfdc.MetadataPackageModule" extends="udm.BaseDeployedArtifact" deployable-type="sfdc.MetadataPackage" container-type="sfdc.Organization">
+        <generate-deployable type="sfdc.MetadataPackage" extends="udm.BaseDeployableArchiveArtifact"/>
+    </type>
+
+</synthetic>

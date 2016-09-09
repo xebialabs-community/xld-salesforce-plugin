@@ -1,0 +1,35 @@
+plugins {
+    id "com.xebialabs.xldp" version "1.0.5"
+}
+
+apply plugin: 'java'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+version = '5.5.0-alpha1'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        credentials {
+            username 'community-plugins'
+            password 'community'
+        }
+        url 'http://nexus.xebialabs.com/nexus/content/repositories/releases'
+    }
+}
+
+sourceSets.main.resources.srcDirs = ["src/main/jython", "src/main/resources"]
+sourceSets.test.resources.srcDirs = ["src/test/jython", "src/test/resources"]
+
+project.ext {
+}
+
+
+dependencies {
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    testCompile 'junit:junit:4.12'
+}

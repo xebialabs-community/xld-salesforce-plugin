@@ -8,7 +8,7 @@ This document describes the functionality provided by the Salesforce plugin.
 
 The Salesforce plugin is an XL Deploy plugin that can perform deployments to Salesforce.
 
-The plugin uses the java/ant-based [ Force.com Migration Tool](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm) for Salesforce integration.
+The plugin uses the [ Force.com Migration Tool](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm) for Salesforce integration.
 
 ## Features ##
 

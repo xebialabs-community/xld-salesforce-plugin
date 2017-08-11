@@ -13,9 +13,6 @@ version = '5.5.0-alpha1'
 repositories {
     mavenLocal()
     mavenCentral()
-    maven {
-        url 'https://dist.xebialabs.com/public/maven2'
-    }
 }
 
 sourceSets.main.resources.srcDirs = ["src/main/jython", "src/main/resources"]

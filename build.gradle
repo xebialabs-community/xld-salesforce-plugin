@@ -8,7 +8,7 @@ apply plugin: 'java'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-version = '5.5.0-alpha1'
+version = '1.0.0'
 
 repositories {
     mavenLocal()

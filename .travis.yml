@@ -6,6 +6,7 @@ deploy:
   file_glob: true
   file: build/libs/*.jar
   skip_cleanup: true
-
   on:
     repo: xebialabs-community/xld-salesforce-plugin
+    all_branches: true
+    tags: true

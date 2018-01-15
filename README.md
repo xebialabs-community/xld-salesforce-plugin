@@ -1,4 +1,7 @@
 # XLD Salesforce Plugin
+
+![travis](https://travis-ci.org/xebialabs-community/xld-salesforce-plugin.svg?branch=master)
+
 ## Preface ##
 
 This document describes the functionality provided by the Salesforce plugin.

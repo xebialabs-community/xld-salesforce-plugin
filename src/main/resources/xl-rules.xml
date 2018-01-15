@@ -27,6 +27,7 @@
             <jython>
                 <description expression="true">'Undeploy metadata package [%s] from [%s]' % (previousDeployed.name, previousDeployed.container.name)</description>
                 <script>sfdc/metadata_package/undeploy.py</script>
+                <order>40</order>
             </jython>
         </steps>
     </rule>

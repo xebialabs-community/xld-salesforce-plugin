@@ -99,7 +99,7 @@ class SalesForceClient(object):
 
     def _deploy_task_template(self):
         template = Template("""
-        <sf:deploy username="$username" password="$password" serverurl="$serverurl" deployRoot="deploy_root" rollbackOnError="true"/>
+        <sf:deploy username="$username" password="$password" serverurl="$serverurl" deployRoot="deploy_root" ignoreWarnings="true" rollbackOnError="true"/>
         """)
         return template.substitute(username=self.username, password=self.password, serverurl=self.url)
 

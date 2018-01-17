@@ -3,7 +3,6 @@
 # CI status #
 
 [![Build Status][xld-salesforce-plugin-travis-image] ][xld-salesforce-plugin-travis-url]
-[![Build Status][xld-salesforce-plugin-codacy-image] ][xld-salesforce-plugin-codacy-url]
 [![License: MIT][xld-salesforce-plugin-license-image] ][xld-salesforce-plugin-license-url]
 [![Github All Releases][xld-salesforce-plugin-downloads-image] ]()
 

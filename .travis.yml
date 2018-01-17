@@ -4,7 +4,7 @@ deploy:
   api_key:
     secure: kIQN71H4sydNLO87TpwabFZ6U8UnHiw8VapWA7zF6Nd/j/VhhJO//sIlVjUGGnvKgmoXfNnFrfg2FoI7IIk+CB4LO1fxKgZjJ23/nycW6hYVZ9UTg4LjC9UWFtkuCPCcKOTkR+BCvKaY5MZ25zsfnSXcQhA3yJvc+Gm1XiFd0u85jCf3LMnfzu7eae93GBvIZbmTiqmTtTvgG0W6bdB2R8k8nP+ErmYtv5Xo3KO8R6F8OkzLI1U31cf4yWuNYb2w8TvAWY33aKKrQ3hzfBd6ZpfV0YMYCMiwK8jv41KO3wKIE5r185+X2so4Xy7sWWGkciGalCpEvz7baXcy6KmEuZs+xWjnX3X7lqdOFsZsIib8S54z94+xM6VHIMTiIIwJp7CJfZVhZopuYebIcLEan+OAGxNMcw7Vc7K1UE4jCGRmFs7bwaxM/Z15CeGihw08SKCVqokxRELyws4HBKeR9FVbywVDHjwgJgNY/eODeP65C6npzIZ2Sir8/LJN/rQUE0dPprPBZArkaXnVaXPLqFFrEVSihzI/zWKdN6XFc35k3JYC0gXj40vmGCmKp5BBOd5VtNgLfpj7vodAeE7mfoX+Kp5Go7TjR59pkcgwFAuRKujrHESpRz1p9L5Ks/FJqDD013qtetT2K7eYcQTCx8JwjoE3dmUQIs6PBS3PUaY=
   file_glob: true
-  file: build/libs/*.jar
+  file: build/distributions/*.xldp
   skip_cleanup: true
   on:
     repo: xebialabs-community/xld-salesforce-plugin

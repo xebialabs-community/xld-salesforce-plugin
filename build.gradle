@@ -1,28 +1,32 @@
 plugins {
-    id "com.xebialabs.xldp" version "1.0.5"
+  id "com.github.hierynomus.license" version "0.14.0"
+  id "com.xebialabs.xl.docker" version "1.1.0"
+  id "com.xebialabs.xldp" version "1.0.5"
 }
 
 apply plugin: 'java'
-
+apply plugin: 'idea'
+apply plugin: 'eclipse'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-version = '1.0.3'
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
+version = '1.0.4'
 
 sourceSets.main.resources.srcDirs = ["src/main/jython", "src/main/resources"]
 sourceSets.test.resources.srcDirs = ["src/test/jython", "src/test/resources"]
 
-project.ext {
+xlDocker {
+  compileImage = 'xebialabs/xld_dev_compile'
+  compileVersion = 'v7.5.0.2'
+  runImage = 'xebialabs/xld_dev_run'
+  runVersion = 'v7.5.0.2'
+  runPortMapping = '15516:5516'
 }
 
-
-dependencies {
-    compile group: 'commons-io', name: 'commons-io', version: '2.5'
-    testCompile 'junit:junit:4.12'
+license {
+  header rootProject.file('License.md')
+  strictCheck false
+  ext.year = Calendar.getInstance().get(Calendar.YEAR)
+  ext.name = 'XEBIALABS'
 }

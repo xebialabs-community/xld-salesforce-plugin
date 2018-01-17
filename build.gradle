@@ -18,9 +18,9 @@ sourceSets.test.resources.srcDirs = ["src/test/jython", "src/test/resources"]
 
 xlDocker {
   compileImage = 'xebialabs/xld_dev_compile'
-  compileVersion = 'v7.5.0.2'
+  compileVersion = 'v7.5.0.1'
   runImage = 'xebialabs/xld_dev_run'
-  runVersion = 'v7.5.0.2'
+  runVersion = 'v7.5.0.1'
   runPortMapping = '15516:5516'
 }
 

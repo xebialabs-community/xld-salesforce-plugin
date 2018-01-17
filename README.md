@@ -37,13 +37,15 @@ The plugin uses the [Force.com Migration Tool](https://developer.salesforce.com/
 
 ## Installation ##
 
+The connection to SFDC will be established from the server XL Deploy is running on. You can configure a proxy server to be used to connect to SFDC. In order to function, the XL Deploy server needs to have Apache Ant and the Force.com JAR file available on the filesystem. These are not provided by this plugin and need to be installed manually, although command to do it automatically are included in the __src/test__ folder of this plugin source code.
+
 ### Ant ###
 
 If Ant is not already present on the XL Deploy server, please download from [here](http://ant.apache.org/bindownload.cgi) and unzip to a location of your choice.
 
 ### Salesforce Migration Tool ###
 
-Download the [Salesforce Jar](./deps/ant-salesforce.jar) from this repository to a location of your choice.
+Download the [Salesforce Jar](https://gs0.salesforce.com/dwnld/SfdcAnt/salesforce_ant_41.0.zip) from this repository to a location of your choice.
 
 
 ### Plugin installation ###
@@ -52,13 +54,13 @@ Plugin can be downloaded directly from the plugin's repository on [Github](https
 
 Place the plugin's XLDP file in the __&lt;xld-home&gt;/plugins__ directory. 
 
-Edit your __&lt;xld-home&gt;/ext/synthetic.xml__ file and copy the following snippet into it.  Remember to change the default values for the location of your Ant executable and ant-salesforce.jar
+For production usage, it problaby makes sense to hardcore the migration tool jar location and ant location instead of configuring it in the UI. You can edit your __&lt;xld-home&gt;/ext/synthetic.xml__ file and copy the following snippet into it.  Remember to change the default values for the location of your Ant executable and ant-salesforce.jar
 
 ```xml
 
 <type-modification type="sfdc.Organization">
-        <property name="migrationToolJar" default="!!CHANGE ME!!>" description="Absolute file reference to the ant-salesforce.jar" hidden="true" />
-        <property name="antExecutable" default="<!!CHANGE ME!!>" description="Absolute file reference to the ant executable (ant, ant.bat, ant.cmd)" hidden="true"  />
+        <property name="migrationToolJar" default="!!CHANGE ME!!" description="Absolute file reference to the ant-salesforce.jar" hidden="true" />
+        <property name="antExecutable" default="!!CHANGE ME!!" description="Absolute file reference to the ant executable (ant, ant.bat, ant.cmd)" hidden="true"  />
 </type-modification>
 
 ```

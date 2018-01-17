@@ -1,0 +1,48 @@
+cd <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2018 XEBIALABS
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-->
+<xl:export xmlns:xl="http://www.xebialabs.com/xl-export">
+  <xl:metadata>
+    <xl:exported-by>admin</xl:exported-by>
+    <xl:exported-at>2016-07-15T22:08:00.297+0000</xl:exported-at>
+    <xl:exported-format-version>5.5.1</xl:exported-format-version>
+    <xl:encryption-key-fingerprint>f6094d333c0736339884d1fe38d9c54e14019ac9</xl:encryption-key-fingerprint>
+  </xl:metadata>
+  <xl:exported-configuration-items exported-root-id="/">
+    <udm.Application id="Applications/SalesForceMetaPackage" created-by="admin" created-at="2016-07-15T22:05:39.495+0000" last-modified-by="admin" last-modified-at="2016-07-15T22:05:45.967+0000">
+      <lastVersion>1.0</lastVersion>
+    </udm.Application>    
+    <udm.DeploymentPackage id="Applications/SalesForceMetaPackage/1.0" created-by="admin" created-at="2016-07-15T22:05:45.877+0000" last-modified-by="admin" last-modified-at="2016-07-15T22:05:45.877+0000">
+      <orchestrator />
+      <applicationDependencies />
+    </udm.DeploymentPackage>
+    <sfdc.MetadataPackage id="Applications/SalesForceMetaPackage/1.0/codepkg" name="codepkg" file="Applications/SalesForceMetaPackage/1.0/codepkg/codepkg.zip">
+      <tags />
+      <scanPlaceholders>false</scanPlaceholders>
+      <checksum>fd0a1b0c5a50d7b4b05d5ea5b384a2ffaabbe218</checksum>
+    </sfdc.MetadataPackage>
+    <sfdc.Organization id="Infrastructure/sfdc" created-by="admin" created-at="2016-07-15T22:05:17.409+0000" last-modified-by="admin" last-modified-at="2016-07-15T22:05:17.409+0000">
+      <url>https://login.salesforce.com</url>
+      <username>to-be-filled</username>
+      <password>to-be-filled</password>
+      <migrationToolJar>/opt/sfdc/ant-salesforce.jar</migrationToolJar>
+      <antExecutable>/opt/sfdc/apache-ant/bin/ant</antExecutable>
+    </sfdc.Organization>
+    <udm.Environment id="Environments/dev" created-by="admin" created-at="2016-07-15T22:05:28.326+0000" last-modified-by="admin" last-modified-at="2016-07-15T22:05:28.326+0000">
+      <members>
+        <ci ref="Infrastructure/sfdc" />
+      </members>
+      <dictionaries />
+      <triggers />
+    </udm.Environment>
+  </xl:exported-configuration-items>
+</xl:export>

@@ -10,6 +10,7 @@ build/
 out/
 target/
 bin/
+supervisord.*
 
 # IntelliJ
 .idea/

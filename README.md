@@ -1,6 +1,18 @@
 # XLD Salesforce Plugin
 
-![travis](https://travis-ci.org/xebialabs-community/xld-salesforce-plugin.svg?branch=master)
+# CI status #
+
+[![Build Status][xld-salesforce-plugin-travis-image] ][xld-salesforce-plugin-travis-url]
+[![Build Status][xld-salesforce-plugin-codacy-image] ][xld-salesforce-plugin-codacy-url]
+[![License: MIT][xld-salesforce-plugin-license-image] ][xld-salesforce-plugin-license-url]
+[![Github All Releases][xld-salesforce-plugin-downloads-image] ]()
+
+[xld-salesforce-plugin-travis-image]: https://travis-ci.org/xebialabs-community/xld-salesforce-plugin.svg?branch=master
+[xld-salesforce-plugin-travis-url]: https://travis-ci.org/xebialabs-community/xld-salesforce-plugin
+[xld-salesforce-plugin-codacy-image]: https://api.codacy.com/project/badge/Grade/b78313b1eb1b4b058dc4512b4d48c26f
+[xld-salesforce-plugin-license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[xld-salesforce-plugin-license-url]: https://opensource.org/licenses/MIT
+[xld-salesforce-plugin-downloads-image]: https://img.shields.io/github/downloads/xebialabs-community/xld-salesforce-plugin/total.svg
 
 ## Preface ##
 

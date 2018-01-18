@@ -21,12 +21,11 @@ xlDocker {
   compileVersion = 'v7.5.0.1'
   runImage = 'xebialabs/xld_dev_run'
   runVersion = 'v7.5.0.1'
-  runPortMapping = '15516:5516'
+  runPortMapping = '14516:4516'
 }
 
 license {
   header rootProject.file('License.md')
-  strictCheck false
   ext.year = Calendar.getInstance().get(Calendar.YEAR)
   ext.name = 'XEBIALABS'
 }

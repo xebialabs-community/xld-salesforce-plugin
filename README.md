@@ -54,7 +54,7 @@ Plugin can be downloaded directly from the plugin's repository on [Github](https
 
 Place the plugin's XLDP file in the __&lt;xld-home&gt;/plugins__ directory. 
 
-For production usage, it problaby makes sense to hardcore the migration tool jar location and ant location instead of configuring it in the UI. You can edit your __&lt;xld-home&gt;/ext/synthetic.xml__ file and copy the following snippet into it.  Remember to change the default values for the location of your Ant executable and ant-salesforce.jar
+For production usage, it problaby makes sense to hardcode the migration tool jar location and ant location instead of configuring it in the UI. You can edit your __&lt;xld-home&gt;/ext/synthetic.xml__ file and copy the following snippet into it.  Remember to change the default values for the location of your Ant executable and ant-salesforce.jar
 
 ```xml
 
